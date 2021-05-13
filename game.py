@@ -137,18 +137,18 @@ class Game():
 				# Play the mp3 file
 				playsound(mp3File)
 
-				# Falling bricks
-				if self.level_time > 500:
-					for i in reversed(range(self.y-4)):
-						for j in range(1, self.x-2):
-							if (self.orignal[i][j] == 'b1') or (self.orignal[i][j] == 'b2') or (self.orignal[i][j] == 'b3') or (self.orignal[i][j] == 'U') or (self.orignal[i][j] == '$') or (self.orignal[i][j] == 'r'):
-								# self.y -5 is 1 level above of ball(here games get over)
-								if i == self.y - 5:
-									thankyou()
-									sys.exit()
+				# Falling bricks(Not working perfectly)
+				# if self.level_time > 500:
+				# 	for i in reversed(range(self.y-4)):
+				# 		for j in range(1, self.x-2):
+				# 			if (self.orignal[i][j] == 'b1') or (self.orignal[i][j] == 'b2') or (self.orignal[i][j] == 'b3') or (self.orignal[i][j] == 'U') or (self.orignal[i][j] == '$') or (self.orignal[i][j] == 'r'):
+				# 				# self.y -5 is 1 level above of ball(here games get over)
+				# 				if i == self.y - 5:
+				# 					thankyou()
+				# 					sys.exit()
 
-								self.orignal[i+1][j] = self.orignal[i][j]
-								self.orignal[i][j] = ' '
+				# 				self.orignal[i+1][j] = self.orignal[i][j]
+				# 				self.orignal[i][j] = ' '
 
 		os.system("clear")
 
