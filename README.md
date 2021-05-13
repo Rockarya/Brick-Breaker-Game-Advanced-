@@ -87,7 +87,7 @@ GAME TIP :- "Choose the rightmmost side to have a score-rich move for the game ;
 NEW FUNCTIONALITIES:-
 -> Implemented levels(use 'l' to skip levels)
 
--> Bricks starts falling after a particular time in a level whenever ball hits the paddle
+-> Bricks starts falling after a particular time in a level whenever ball hits the paddle(buggy!) 
 
 -> Rainbow Bricks:- Bricks keep changing colors until first hit
 
